@@ -4,9 +4,61 @@
 First Attemps to Implement Xmpp Library For Unity 3D &lt; Net 3.5 With C#
 
 
-Extensible Messaging and Presence Protocol (XMPP) is a communication protocol for message-oriented middleware based on XML (Extensible Markup Language).It enables the near-real-time exchange of structured yet extensible data between any two or more network entities.Originally named Jabber,the protocol was developed by the homonym open-source community in 1999 for near real-time instant messaging (IM), presence information, and contact list maintenance. Designed to be extensible, the protocol has been used also for publish-subscribe systems, signalling for VoIP, video, file transfer, gaming, the Internet of Things (IoT) applications such as the smart grid, and social networking services.
+An XMPP library for Unity 3D targeting C# .NET 2.0 is used to implement communication with an XMPP (Extensible Messaging and Presence Protocol) server. This is useful for chat systems, real-time messaging, or presence updates within Unity applications.
 
-Unlike most instant messaging protocols, XMPP is defined in an open standard and uses an open systems approach of development and application, by which anyone may implement an XMPP service and interoperate with other organizations' implementations. Because XMPP is an open protocol, implementations can be developed using any software license and many server, client, and library implementations are distributed as free and open-source software. Numerous freeware and commercial software implementations also exist.
+Key Features of an XMPP Library:
+Core Protocol Support:
+
+Supports core XMPP functionalities, such as message exchange, presence updates, and roster management.
+Handles XML-based communication with the XMPP server.
+Unity Compatibility:
+
+Designed to work within Unity's Mono runtime environment, which might have some limitations compared to modern .NET environments.
+Optimized for .NET 2.0, which Unity used in earlier versions.
+Async Communication:
+
+Uses asynchronous callbacks or threads to handle XMPP events without blocking Unity's main thread.
+Features Commonly Supported:
+
+Authentication (Plain, Digest-MD5, etc.).
+Messaging (1:1 chats and group chats).
+Presence updates (online, away, busy, etc.).
+Roster management (contacts and friend lists).
+Extensions like MUC (Multi-User Chat), Service Discovery, and PubSub (Publish-Subscribe).
+Lightweight and Cross-Platform:
+
+Libraries for Unity 3D are generally lightweight and designed to function across multiple platforms (e.g., PC, mobile).
+Popular Libraries and Considerations:
+1. AgsXMPP:
+A lightweight library compatible with .NET 2.0.
+Features include core XMPP functionality, presence updates, roster management, and more.
+Works well in Unity with minimal modifications.
+Pros:
+
+Simple API for handling XMPP messages.
+Suitable for lightweight chat applications in Unity.
+Cons:
+
+Lacks some modern features and security protocols (like XMPP over WebSocket).
+2. MatriX XMPP:
+Another robust library, but it may require licensing for advanced features.
+Compatible with .NET 2.0 and Unity.
+3. Custom Implementation:
+If pre-built libraries are insufficient, you can build an XMPP client from scratch using the System.Xml namespace for parsing XML and System.Net.Sockets for TCP communication.
+This approach provides flexibility but requires familiarity with the XMPP protocol and its extensions.
+Steps to Use an XMPP Library in Unity:
+Setup:
+
+Import the library's DLL into Unity by placing it in the Assets/Plugins folder.
+Ensure the library is compatible with Unity's .NET 2.0 subset.
+Initialization:
+
+Create a connection to the XMPP server.
+Authenticate using the desired method (e.g., username/password).
+Messaging:
+
+Subscribe to message and presence events.
+Send and receive XMPP messages in real-time.
 
 
 

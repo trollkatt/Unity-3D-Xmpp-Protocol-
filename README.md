@@ -1,3 +1,9 @@
+Trollkat's (forker's) note: I initially forked this project to improve it and contribute back the changes. However, I do not agree with the way GitHub is partnering with xAI, so I have moved my fork to GitLab: https://gitlab.com/alejandrovr/Unity-3D-Xmpp-Protocol .
+
+All the new improvements will be over there.
+
+---
+
 # Unity 3D XMPP Protocol Library
 
 [![GitHub Stars](https://img.shields.io/github/stars/attributeyielding/Unity-3D-Xmpp-Protocol-.svg?style=social)](https://github.com/attributeyielding/Unity-3D-Xmpp-Protocol-)
